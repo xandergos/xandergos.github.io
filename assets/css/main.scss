@@ -1,0 +1,23 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+$serif      : Georgia, Times, serif;
+$sans-serif : "Raleway", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace  : Monaco, Consolas, "Lucida Console", monospace;
+
+$global-font-family : $sans-serif;
+.page__content {
+    font-family: $global-font-family;
+    font-size: 0.8em;
+  }
+
+img + em { 
+  font-size: 0.8em;
+}
+  
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+  
